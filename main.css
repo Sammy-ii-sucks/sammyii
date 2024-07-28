@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+}
+
+:root {
+    --font: 'Montserrat', sans-serif;
+    --prime-font: 'Work Sans', sans-serif;
+    --bg: #FDFDF8;
+    --main-color: #1B2B54;
+    --sec-color: #EEB839;
+    --main-font-color: #EEB839;
+    --sec-font-color: #FFFFFF;
+    --thir-font-color: #2F9428;
+}
+
+
+header{
+    background:var(--main-color);
+    text-align: center;
+    position:fixed;
+    z-index: 5;
+    width:100%;
+}
+
+nav{
+    position:absolute;
+    text-align: center;
+    top:100%;
+    left:0;
+    padding-top:2em;
+    background-color: var(--main-color);
+    width:100%;
+    transform:scale(1,0);
+    transform-origin:top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+nav li{
+    margin: 1em 2em 1em 2em;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: var(--font);
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover{
+    color:var(--main-font-color);
+}
+
+.nav-toggle:checked ~ nav{
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a{
+    opacity:1;
+    transition:opacity 250ms ease-in-out 300ms;
+}
+
+
+#nav-toggle{
+    display:none;
+}
+
+.nav-toggle-label{
+    position:absolute;
+    top:30px;
+    left:0;
+    margin-left:1em;
+    height:5%;
+    display:flex;
+    align-items: center;
+}
+
+.nav-toggle-label span{
+    width:150px;
+    height:150px;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label::before,
+.nav-toggle-label::after{
+    width:1.5em;
+    display:block;
+    background-color: white;
+    height:2px;
+    border-radius: 2px;
+    position:relative;
+}
+
+.nav-toggle-label::before,
+.nav-toggle-label::after{
+    content:'';
+    position:absolute;
+}
+
+.nav-toggle-label::before{
+    bottom:7px;
+}
+
+.nav-toggle-label::after{
+    top:7px;
+}
+
+
+@media screen and (min-width: 800px){
+
+    .nav-toggle-label{
+        display:none;
+    }
+
+    header{
+        position:relative;
+        width:100%;
+        top:0;
+        height:8%;
+        box-shadow: 0px 0px 5px 0px var(--main-font-color);
+        height:50px;
+    }
+
+    nav a{
+        opacity:1;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        position:relative;
+        margin: 1em auto;
+    }
+
+    nav li{
+        margin: 0 2em 0 2em;
+        display: inline;
+        color: var(--sec-font-color);
+        font-family: var(--font);
+        font-size: 1.1em;
+    }
+
+    nav li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    nav li a:hover {
+        text-decoration: none;
+        color: var(--sec-color);
+    }
+
+    #image {
+        background-image: url('_img/SAMMYIILogo.png');
+        background-position: center;
+        background-size: cover;
+        padding: .25em .85em;
+    }
+
+    nav {
+        all:unset;
+        display:flex;
+        align-self: center;
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 5;
+    }
+
+}

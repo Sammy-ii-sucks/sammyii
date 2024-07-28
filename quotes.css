@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font: 'Montserrat', sans-serif;
+    --prime-font: 'Work Sans', sans-serif;
+    --bg: #FDFDF8;
+    --main-color: #1B2B54;
+    --sec-color: #EEB839;
+    --main-font-color: #EEB839;
+    --sec-font-color: #FFFFFF;
+    --thir-font-color: #2F9428;
+    --four-font-color:#333333;
+}
+
+main{
+    width:90%;
+    margin:0 5% 0 2.5%;
+    background:none;
+}
+
+body{
+    background-image: url("/_img/sammyiinew.webp");
+    background-repeat:repeat;
+    background-size:1200px 1200px;
+    position: relative;
+}
+
+h1, h2, p{
+    color:var(--sec-font-color);
+    font-family: var(--font);
+    background:none;
+}
+
+h1{
+    margin: 5% auto;
+    padding: 5%;
+    width:100%;
+    text-align: center;
+    background-color:rgba(51,51,51,.25);
+    border-radius:50px;
+}
+
+.words{
+    padding:5% 5%;
+    margin:auto;
+    background: none;
+    text-align: center;
+}
+
+p{
+    color:var(--four-font-color);
+}
+
+.quote{
+    background: rgba(255, 255, 255, 0.71);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    width:250px;
+    margin:2%;
+}
+
+#quotes{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    background: none;
+}
+
+@media (max-width: 800px){
+    h1{
+        margin-top: 10%;
+        padding: 10% 0 0 0;
+    }
+}

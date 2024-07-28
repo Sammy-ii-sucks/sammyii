@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font: 'Montserrat', sans-serif;
+    --prime-font: 'Work Sans', sans-serif;
+    --bg: #FDFDF8;
+    --main-color: #1B2B54;
+    --sec-color: #EEB839;
+    --main-font-color: #EEB839;
+    --sec-font-color: #FFFFFF;
+    --thir-font-color: #2F9428;
+    --four-font-color:#333333;
+}
+
+main{
+    width:90%;
+    margin:0 5% 2.5% 5%;
+    background:none;
+}
+
+body{
+    background-repeat:repeat;
+    background-size:contain;
+    position: relative;
+}
+
+h1, h2, p{
+    font-family: var(--font);
+    background:transparent;
+}
+
+h1{
+    margin: 7% auto 0% auto;
+    width:100%;
+    text-align: center;
+    font-size:7vw;
+    color:var(--sec-font-color);
+    font-family:var(--font);
+}
+
+p, h2, h3{
+    color:var(--four-font-color);
+    font-family: var(--font);
+}
+
+h3{
+    margin-top:2.5%;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color:var(--four-font-color);
+    background-color: transparent;
+}
+
+a:hover{
+    font-weight:bold;
+}
+
+#menWrap{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.image{
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    width:60%;
+    height:50%;
+    margin:5% 10%;
+}
+
+.image2{
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    width:80%;
+    height:60%;
+    margin:5% 10%;
+}
+
+.nameTxt{
+    width:95%;
+    height:45%;
+    margin:2.5% 2.5%;
+    text-align: center;
+    background-color: transparent;
+    font-family:var(--font);
+}
+
+.nameTxt h2, .nameTxt h3{
+    background-color: transparent;
+    font-family:var(--font2);
+    color:var(--third-color);
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.71);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    height:250px; 
+    width:300px;
+    margin:5% 2.2%;
+    cursor:pointer;
+    border-color: transparent;
+}
+
+.card:hover{
+    background: rgba(255, 255, 255, 0.55);
+    border-color: transparent;
+}
+
+#overlay {
+    overflow:auto;
+    position: fixed;
+    display:none;
+    width: 90%;
+    height: 85%;
+    z-index: 2;
+    border-radius:45px;
+    background: rgba(255, 255, 255, 0.71);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin: 1em 0 10% 0;
+}
+
+.left{
+    width:40%;
+    height:100%;
+    float:left;
+    background-color: transparent;
+    margin:5%;
+    position:fixed;
+}
+
+#leftImage{
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    height:60%;
+    border-radius: 10px;
+}
+
+#right{
+    background-color: transparent;
+    height:100%;
+    width:50%;
+    float:right;
+}
+
+#rightText{
+    background-color: transparent;
+    line-height: 2em;
+    margin: 12% 15%;
+}
+
+#x{
+    float:right;
+    padding:15px;
+    background-color: transparent;
+}
+
+#x:hover{
+    cursor:pointer;
+}
+
+#oldFolks{
+    width:100%;
+}
+
+#oldFolksNewPage{
+    width:fit-content;
+    display:block;
+    margin:0 auto;
+}
+
+#alum{
+    color:white;
+    font-size: 25px;
+}
+
+@media (max-width: 800px){
+
+    .left{
+        width:90%;
+        background-color: transparent;
+        margin:5% 5% 0px 5%;
+        height:45%;
+        position:relative;
+        background-color: transparent;
+    }
+    
+    #leftImage{
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: contain;
+        height:100%;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    
+    #right{
+        background-color: transparent;
+        width:100%;
+        height:fit-content;
+        margin:0%;
+    }
+    
+    #rightText{
+        background-color: transparent;
+        line-height: 2em;
+        height:fit-content;
+    }
+
+    #overlay{
+        height: 90%;
+        margin-top:2em;
+    }
+
+    .nav-toggle-label{
+        position:absolute;
+        top:0;
+        left:0;
+        margin-left:1em;
+        margin-top: 2em;
+        height:100%;
+        display:flex;
+        align-items: center;
+    }
+}
+
+
